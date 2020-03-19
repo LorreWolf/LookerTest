@@ -114,4 +114,5 @@ view: events {
     type: min
     drill_fields: [id]
   }
+
 }

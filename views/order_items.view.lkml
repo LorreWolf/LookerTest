@@ -118,4 +118,5 @@ view: order_items {
     type: min
     drill_fields: [id]
   }
+
 }

@@ -91,11 +91,36 @@ view: users {
 
   measure: max {
     type: max
-    drill_fields: [id]
+    drill_fields: [id, first_name, last_name, events.count, order_items.count]
   }
 
   measure: min {
     type: min
-    drill_fields: [id]
+    drill_fields: [id, first_name, last_name, events.count, order_items.count]
+  }
+
+  measure: average {
+    type: average
+    drill_fields: [id, first_name, last_name, events.count, order_items.count]
+  }
+
+  measure: average_distinct {
+    type: average_distinct
+    drill_fields: [id, first_name, last_name, events.count, order_items.count]
+  }
+
+  measure: count_distinct {
+    type: count_distinct
+    drill_fields: [id, first_name, last_name, events.count, order_items.count]
+  }
+
+  measure: sum {
+    type: sum
+    drill_fields: [id, first_name, last_name, events.count, order_items.count]
+  }
+
+  measure: sum_distinct {
+    type: sum_distinct
+    drill_fields: [id, first_name, last_name, events.count, order_items.count]
   }
 }
