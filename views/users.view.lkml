@@ -91,7 +91,7 @@ view: users {
 
   measure: max {
     type: max
-    drill_fields: [id, first_name, last_name, events.count, order_items.count]
+    drill_fields: [id]
   }
 
   measure: min {
