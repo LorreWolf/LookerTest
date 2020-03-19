@@ -27,4 +27,14 @@ view: etl_jobs {
     type: count
     drill_fields: [id]
   }
+
+  measure: max {
+    type: max
+    drill_fields: [id]
+  }
+
+  measure: min {
+    type: min
+    drill_fields: [id]
+  }
 }

@@ -54,4 +54,14 @@ view: products {
     type: count
     drill_fields: [id, name, distribution_centers.name, distribution_centers.id, inventory_items.count]
   }
+
+  measure: max {
+    type: max
+    drill_fields: [id]
+  }
+
+  measure: min {
+    type: min
+    drill_fields: [id]
+  }
 }

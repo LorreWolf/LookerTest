@@ -88,4 +88,14 @@ view: users {
     type: count
     drill_fields: [id, first_name, last_name, events.count, order_items.count]
   }
+
+  measure: max {
+    type: max
+    drill_fields: [id]
+  }
+
+  measure: min {
+    type: min
+    drill_fields: [id]
+  }
 }

@@ -108,4 +108,14 @@ view: order_items {
       inventory_items.product_name
     ]
   }
+
+  measure: max {
+    type: max
+    drill_fields: [id]
+  }
+
+  measure: min {
+    type: min
+    drill_fields: [id]
+  }
 }

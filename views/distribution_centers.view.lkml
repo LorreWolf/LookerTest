@@ -28,4 +28,14 @@ view: distribution_centers {
     type: count
     drill_fields: [id, name, products.count]
   }
+
+  measure: max {
+    type: max
+    drill_fields: [id]
+  }
+
+  measure: min {
+    type: min
+    drill_fields: [id]
+  }
 }
