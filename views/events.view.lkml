@@ -19,6 +19,12 @@ view: events {
     sql: ${TABLE}."CITY" ;;
   }
 
+  dimension: city_state {
+    type: string
+    sql: ${TABLE}."CITY"||','||${TABLE}."STATE" ;;
+  }
+
+
   dimension: country {
     type: string
     map_layer_name: countries
