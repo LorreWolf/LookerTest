@@ -89,38 +89,45 @@ view: users {
     drill_fields: [id, first_name, last_name, events.count, order_items.count]
   }
 
-  measure: max {
+  measure: max_id {
     type: max
+    sql: ${id} ;;
     drill_fields: [id]
   }
 
-  measure: min {
+  measure: min_id {
     type: min
+    sql: ${id} ;;
     drill_fields: [id, first_name, last_name, events.count, order_items.count]
   }
 
-  measure: average {
+  measure: average_id {
     type: average
+    sql: ${id} ;;
     drill_fields: [id, first_name, last_name, events.count, order_items.count]
   }
 
-  measure: average_distinct {
+  measure: average_distinct_id {
     type: average_distinct
+    sql: ${id} ;;
     drill_fields: [id, first_name, last_name, events.count, order_items.count]
   }
 
-  measure: count_distinct {
+  measure: count_distinct_id {
     type: count_distinct
+    sql: ${id} ;;
     drill_fields: [id, first_name, last_name, events.count, order_items.count]
   }
 
-  measure: sum {
+  measure: sum_id {
     type: sum
+    sql: ${id} ;;
     drill_fields: [id, first_name, last_name, events.count, order_items.count]
   }
 
-  measure: sum_distinct {
+  measure: sum_distinct_id {
     type: sum_distinct
+    sql: ${id} ;;
     drill_fields: [id, first_name, last_name, events.count, order_items.count]
   }
 }
